@@ -1,0 +1,51 @@
+header {
+    background-color: blue;
+    color: white;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0px;
+}
+
+
+.group{
+    display: flex;
+    flex-direction: column;
+}
+
+header div nav {
+    font-family: monospace;
+}
+
+header div nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+header div nav ul li {
+    display: flex;
+    padding-right: 15px;
+}
+
+header div nav ul li a {
+    display: flex;
+    flex-direction: row;
+
+    color: white;
+}
+
+@media all and (min-width:600px) {
+    .group {
+        flex-direction: row;
+    }
+
+    header div nav ul {
+      justify-content: right;
+    }
+
+    header h1 {
+        text-align: left;
+    }
+}
